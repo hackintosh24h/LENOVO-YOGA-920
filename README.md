@@ -4,7 +4,8 @@ The EFI/OPENCORE file FOR Hacintosh - Yoga 920 (i7/8550u/Graphics-UHD620-4k/Trac
 MAC OS Version: Catalina 10.15.7 and BigSur 11.0.1
 
 Thanks mrGin
-What is working
+
+#Working
 
     Intel Graphic UHD620
     PS2 Keyboard
@@ -19,24 +20,16 @@ What is working
     Bluetooth 4.0 replaced to DW1820a
     Airdrop/Handoff/Sidecar
 
-What is not working
+#Not working
 
     WIFI and Bluetooth card change to bcm94350 (DW1820A)
     Fingerprint
 
-SSDT
+#SSDT
+
 #Battery Path
 
 #Brightness Keys Patch
-
-into method label _Q38 replace_content
-begin
-Notify (PS2K, 0x0406)
-end;
-into method label _Q39 replace_content
-begin
-Notify (PS2K, 0x0405)
-end;
 
 #leep
 
